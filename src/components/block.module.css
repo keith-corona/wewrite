@@ -1,0 +1,28 @@
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    width: 15rem;
+    padding: 0 .25rem;
+    color: red;
+    margin: 1.25rem;
+    
+    box-shadow: .3rem .3rem .75rem rgb(9, 227, 235, .3);
+    overflow: hidden;
+}
+
+h4 {
+    font-size: 1.75rem;
+}
+
+p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.block:hover {
+    box-shadow: .3rem .3rem .75rem rgb(9, 227, 235, 1);
+    
+}

@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-end;
+    margin: 3rem 2rem;
+    padding: 1rem;
+    max-width: 65rem;
+    background-color: #fff;
+    text-align: center;
+    border: yellow 1px solid;
+}
+
+.container > div {
+    margin: 1rem;
+    min-width: 8rem;
+}

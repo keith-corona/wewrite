@@ -6,5 +6,27 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: `Title from siteMetadata`,
+  },
+  plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: 'gatsby-source-filesystem', /* This imports the blog data */
+      options: {
+        path: `${__dirname}/src/pages/blogs`,
+        name: 'pages',
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem', /* This imports the blog data */
+      options: {
+        path: `${__dirname}/src/images`,
+        name: 'images',
+      }
+    },
+    'gatsby-transformer-remark' /* This transforms MD to HTML -- When do you use single quotes versus backticks in Gatsby/React? */
+  ],
 }
+
