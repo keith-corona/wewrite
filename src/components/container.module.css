@@ -1,16 +1,32 @@
 .container {
     display: flex;
-    flex-direction: row; 
-    align-items: flex-end;
-    margin: 3rem 2rem;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
     padding: 1rem;
     max-width: 65rem;
-    background-color: #fff;
-    text-align: center;
-    border: yellow 1px solid;
+    overflow: hidden;
 }
 
-.container > div {
-    margin: 1rem;
-    min-width: 8rem;
+.container > div:first-child {
+    margin-right: 1rem;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.4rem;
+    padding-bottom: .75rem;
+}
+
+h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: .75rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    padding-bottom: .75rem;
 }

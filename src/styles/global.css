@@ -7,10 +7,6 @@ html {
     background-color: #fff;
 }
 
-p {
-    text-align: left;
-}
-
 ul {
     list-style: none;
 }
@@ -23,4 +19,32 @@ ul, li {
 
 a {
     text-decoration: none;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: .75rem;
+    color:rgb(2, 17, 66);
+    text-shadow: 2px 2px 5px rgba(2, 17, 66, .4);
+}
+
+.author-name {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #EDE90C;
+}
+
+.title,
+.author-name {
+    text-align: center;
+    color: rgb(2, 17, 66);
+}
+
+.article-text {
+    font-size: 1.2rem;
+    color: rgb(2, 17, 66);
+}
+
+.post-wrapper {
+    background-color: #ccebff;
 }
