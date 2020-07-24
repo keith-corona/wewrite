@@ -26,7 +26,6 @@ const IndexPage = ({data}) => (
             </div>
         </Container>
 
-        
 
         {/* Below is from Tolinski */}
         <ul style={{display: `flex`, flexDirection:`row`, flexWrap: `wrap`, justifyContent: `center`, alignItems: `center`, alignContent: `center`, margin: `0 2rem`,}}>{data.allMarkdownRemark.edges.map(post => (
@@ -41,7 +40,7 @@ const IndexPage = ({data}) => (
             </Link>
         ))}</ul>
 
-        <Footer footerText="This is a UCSB Linguistics 12 project" footerQtr="Spring" footerYr="2020"/>
+        <Footer footerReturn="Home" linkContact="Contact" footerText="This is a UCSB Linguistics 12 project" footerQtr="Spring" footerYr="2020"/>
 
     </div>
 )

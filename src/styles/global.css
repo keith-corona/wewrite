@@ -46,5 +46,74 @@ a {
 }
 
 .post-wrapper {
-    background-color: #ccebff;
+    background-color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,
+textarea {
+    display: block;
+    width: 25rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+    padding: .33rem;
+    border-radius: .5rem;
+    border: .15rem #EDE90C solid;
+}
+
+textarea {
+    height: 10rem;
+    font-size: 1.5rem;
+}
+
+label {
+    text-align: center;
+    font-size: 1.33rem;
+}
+
+.btn {
+    width: 12rem;
+    height: 3rem;
+    margin: .5rem;
+    font-size: 1.33rem;
+    background-color: rgba(100, 219, 255, 0.705);
+    border: .25rem solid #EDE90C;
+    border-radius: .5rem;
+}
+
+.btn:last-child {
+    width: 6rem;
+    height: 2rem;
+    font-size: 1rem;
+    background-color: #f2f2f2;
+    opacity: .33; 
+}
+
+.btn:hover {
+    background-color: #EDE90C;
+    border: .25rem solid rgba(100, 219, 255, 0.705);
+    opacity: 1;
+}
+
+input:hover,
+textarea:hover {
+    background-color: rgba(246, 255, 125, 0.616);
+}
+
+input:focus,
+textarea:focus {
+    background-color: rgba(100, 219, 255, 0.705);
+    border: .33rem solid #EDE90C;
+    outline: none;
+}
+
+#title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: red;
 }
