@@ -27,7 +27,7 @@ const IndexPage = ({data}) => (
         </Container>
 
 
-        {/* Below is from Tolinski */}
+        {/* Below is from tolinski */}
         <ul style={{display: `flex`, flexDirection:`row`, flexWrap: `wrap`, justifyContent: `center`, alignItems: `center`, alignContent: `center`, margin: `0 2rem`,}}>{data.allMarkdownRemark.edges.map(post => (
             <Link style={{ color: `#0A8189`, fontSize:`2rem` }} to={post.node.frontmatter.path}>
                 <div style={{ backgroundColor: `#EDE90C`,  boxShadow: `-.3rem -.3rem .75rem rgb(244, 181, 46, .7),.3rem .3rem .75rem rgb(9, 227, 235, .7), .2rem .2rem .75rem rgb(46, 244, 217, .2)`, margin: `.75rem .75rem`, padding: `.25rem`, height: `15rem`, width: `15rem`, borderRadius: `7px`, display: `flex`, flexDirection:`row`, flexWrap: `wrap`, justifyContent: `center`, alignItems: `center`, alignContent: `center`, maxWidth: `90vw`,}}>
