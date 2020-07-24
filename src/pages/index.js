@@ -3,7 +3,6 @@ import {Link, graphql, useStaticQuery} from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import Container from "../components/container"
-import GoingHome from "../images/going_home.jpg"
 
 
 const IndexPage = ({data}) => (
@@ -12,7 +11,7 @@ const IndexPage = ({data}) => (
         <Header headerText="Stories from the Sources" link1Text= "Contact"/>
         <Container>
             <div>
-                <img style={{maxWidth: `600px`,}}src={GoingHome} alt="Airport checking for COVID-19"/>
+                nada
             </div>
             <div style={{maxWidth: `400px`,}}>
                 <h1>Stories from the Sources:</h1> 
