@@ -7,7 +7,7 @@ const Contact = () => (
 
 <div>
 <Header headerText="Stories from the Sources" link1Text= "Contact"/>
-<h1 id="title">Leave us a note</h1>
+<h1 id="title">Leave Us a Note</h1>
     <Container>
         <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
             <input type="hidden" name="bot-field" />
