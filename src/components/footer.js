@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 export default props => 
     <div className="footer-flex">
         
-        <div className="footer-text" style={{ display: `flex`, flexDirection: `column`, alignItems: `flex-start`, backgroundColor: `#072B5E`, fontSize: `1.3rem`}}>
+        <div className="footer-text text-1">
             <Link style={{ color: `#EDE90C`, }} to="/">
                 <p>{props.footerReturn}</p>
             </Link>
@@ -14,7 +14,7 @@ export default props =>
             </Link>
         </div>
 
-        <div className="footer-text" style={{display: `flex`, flexDirection: `column`, flexWrap: `wrap`, alignItems: `flex-end`, backgroundColor: `#072B5E`, marginTop: `0rem` }}>
+        <div className="footer-text text-2">
             <p style={{color: `#EDE90C`, fontSize: `1.3rem`}}>{props.footerText}</p>
             <p style={{margin: `0`, padding: `0`, color: `#EDE90C`}}>{props.footerQtr} {props.footerYr}</p>
         </div>

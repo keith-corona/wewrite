@@ -129,15 +129,32 @@ textarea:focus {
     padding: 5rem 2rem; 
     align-items: flex-start;
 }
+
+.text-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; background-color: #072B5E;
+    font-size: 1.3rem;
+}
+
+.text-2 {
+    display: flex; 
+    flex-direction: column; 
+    flex-wrap: wrap; 
+    align-items: flex-end; background-color: #072B5E; margin-top: 0rem;
+}
+
 @media only screen and (max-width: 600px) {
     .footer-flex {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 
     .footer-text {
-        font-size: 1rem;
+        flex-direction: column;
+        font-size: 1.25rem;
         max-width: 90vw;
         align-items: center;
         justify-content: center;
@@ -145,6 +162,11 @@ textarea:focus {
 
     .footer-text:first-of-type {
         margin-bottom: 6rem;
+        font-size: 2rem;   
+    }
+
+    .footer-text:first-of-type p {
+        margin: 1rem 0;
     }
 
   }
