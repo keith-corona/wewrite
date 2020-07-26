@@ -49,32 +49,57 @@ a {
     background-color: #fff;
 }
 
+#title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: red;
+}
+
+#cover-photo {
+    max-width: 38rem;
+    border: 1px red solid;
+}
+
+
+/********** Form Style **********/
+
 form {
     display: flex;
     flex-direction: column;
+    border: #EDE90C 3px solid;
+    overflow: hidden;
+    padding: .5rem;
+    width: 75%;
+    min-width: 20rem;
+    max-width: 35rem;
     align-items: center;
 }
 
-input,
-textarea {
-    display: block;
-    width: 25rem;
-    height: 2.5rem;
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 1.33rem;
+    border: 1px red dotted;
+}
+
+#name,
+#email,
+#message {
+    flex: 1;
     font-size: 1.25rem;
     padding: .33rem;
     border-radius: .5rem;
     border: .15rem #EDE90C solid;
+    min-width: 90%;
 }
 
-textarea {
+/* textarea {
     height: 10rem;
     font-size: 1.5rem;
-}
+} */
 
-label {
-    text-align: center;
-    font-size: 1.33rem;
-}
 
 .btn {
     width: 12rem;
@@ -87,11 +112,11 @@ label {
 }
 
 .btn:last-child {
-    width: 6rem;
     height: 2rem;
     font-size: 1rem;
     background-color: #f2f2f2;
     opacity: .33; 
+    max-width: 33%;
 }
 
 .btn:hover {
@@ -112,16 +137,7 @@ textarea:focus {
     outline: none;
 }
 
-#title {
-    text-align: center;
-    font-size: 2.5rem;
-    color: red;
-}
-
-#cover-photo {
-    max-width: 38rem;
-    border: 1px red solid;
-}
+/********* Footer Style ***********/
 
 .footer-flex {
     display: flex; 
