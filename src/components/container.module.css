@@ -1,18 +1,27 @@
 .container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; 
-    justify-content: center;
     align-items: center;
     margin: 3rem auto;
-    padding: 1rem;
-    max-width: 65rem;
+    padding: 0rem;
+    max-width: 80vw;
     overflow: hidden;
+}
+
+.container > div {
+    flex: 1;
 }
 
 .container > div:first-child {
     margin-right: 1rem;
+    /* width: 30rem; */
+    /* min-width: 20rem; */
 }
+
+.container > div:nth-child(2) {
+    /* max-width: 35rem; */
+}
+
 
 p {
     text-align: justify;
@@ -29,4 +38,8 @@ h1 {
 h2 {
     font-size: 2.5rem;
     padding-bottom: .75rem;
+}
+
+.flex {
+    border: 2px red solid;
 }

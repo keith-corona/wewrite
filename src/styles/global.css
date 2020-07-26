@@ -120,4 +120,5 @@ textarea:focus {
 
 #cover-photo {
     max-width: 38rem;
+    border: 1px red solid;
 }

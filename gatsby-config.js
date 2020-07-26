@@ -20,7 +20,7 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-source-filesystem', /* This imports the blog data */
+      resolve: 'gatsby-source-filesystem', /* This imports the image data */
       options: {
         path: `${__dirname}/src/images`,
         name: 'images',
