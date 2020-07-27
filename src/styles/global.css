@@ -66,7 +66,6 @@ a {
 form {
     display: flex;
     flex-direction: column;
-    border: #EDE90C 3px solid;
     overflow: hidden;
     padding: .5rem;
     width: 75%;
@@ -81,7 +80,6 @@ label {
     align-items: center;
     width: 100%;
     font-size: 1.33rem;
-    border: 1px red dotted;
 }
 
 #name,
