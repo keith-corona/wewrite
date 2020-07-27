@@ -45,7 +45,7 @@ a {
 .article-text {
     font-size: 1.2rem;
     color: rgb(2, 17, 66);
-    padding: 0 1rem;
+    padding: 0 7rem;
 }
 
 .post-wrapper {
@@ -184,6 +184,12 @@ textarea:focus {
 
     .footer-text:first-of-type p {
         margin: 1rem 0;
+    }
+
+    .article-text {
+        font-size: 1.2rem;
+        color: rgb(2, 17, 66);
+        padding: 0 1rem;
     }
 
   }
