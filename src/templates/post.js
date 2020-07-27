@@ -13,13 +13,13 @@ export default function Template({
   return (
     <div className="post-wrapper">
       <Header headerText="Stories from the Sources" link1Text= "Contact"/>
-      <Container>
-        <div>
+      {/* <Container> */}
+        <div className="content-wrapper">
           <h1 className="title">{post.frontmatter.title}</h1><h3 className="author-name">by {post.frontmatter.author}</h3>
           <div className="article-text" dangerouslySetInnerHTML={{ __html: post.html }} />
 
         </div>
-      </Container> 
+      {/* </Container>  */}
       <Footer footerReturn="Home" linkContact="Contact" footerText="This is a UCSB Linguistics 12 project" footerQtr="Spring" footerYr="2020"/>
     </div>
   )
