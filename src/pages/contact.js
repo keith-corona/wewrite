@@ -22,7 +22,7 @@ const Contact = () => (
             Message
             <textarea name="message" id="message" rows="5" />
             </label>
-            <button class="btn" type="submit">Send</button>
+            <button type="submit">Send</button>
         </form>
     </Container>
 <Footer footerReturn="Home" linkContact="Contact" footerText="This is a UCSB Linguistics 12 project" footerQtr="Spring" footerYr="2020"/>
