@@ -9,22 +9,20 @@ const Contact = () => (
 <Header headerText="Stories from the Sources" link1Text= "Contact"/>
 <h1 id="title">Leave Us a Note</h1>
     <Container>
-        <form action="/" method="post" data-netlify-recaptcha="true" data-netlify="true" name="contact">
-            <label>
-            Name
-            <input type="text" name="name" id="name" />
-            </label>
-            <label>
-            E-mail
-            <input type="email" name="email" id="email" />
-            </label>
-            <label>
-            Message
-            <textarea name="message" id="message" rows="5" />
-            </label>
-            <div data-netlify-recaptcha="true"></div>
-            <button class="btn" type="submit">Send</button>
-        </form>
+    <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+  <p class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
+  <p>
+    <label>Email: <input type="text" name="email" /></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
     </Container>
 <Footer footerReturn="Home" linkContact="Contact" footerText="This is a UCSB Linguistics 12 project" footerQtr="Spring" footerYr="2020"/>
 </div>
