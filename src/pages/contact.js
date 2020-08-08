@@ -9,7 +9,7 @@ const Contact = () => (
 <Header headerText="Stories from the Sources" link1Text= "Contact"/>
 <h1 id="title">Leave Us a Note</h1>
     <Container>
-        <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+        <form action="/" method="post" data-netlify-recaptcha="true" data-netlify="true" name="contact">
             <label>
             Name
             <input type="text" name="name" id="name" />
@@ -22,6 +22,7 @@ const Contact = () => (
             Message
             <textarea name="message" id="message" rows="5" />
             </label>
+            <div data-netlify-recaptcha="true"></div>
             <button type="submit">Send</button>
         </form>
     </Container>
