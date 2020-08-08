@@ -9,7 +9,7 @@ const Contact = () => (
 <Header headerText="Stories from the Sources" link1Text= "Contact"/>
 <h1 id="title">Leave Us a Note</h1>
     <Container>
-        <form method="post" data-netlify-honeypot="bot-field" data-netlify="true" name="contact">
+        <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
             <label>
             Name
             <input type="text" name="name" id="name" />
