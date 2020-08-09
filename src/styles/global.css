@@ -66,7 +66,7 @@ a {
 
 /********** Form Style **********/
 
-form {
+/* form {
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -96,10 +96,10 @@ label {
     min-width: 90%;
 }
 
-/* textarea {
+textarea {
     height: 10rem;
     font-size: 1.5rem;
-} */
+}
 
 
 .btn {
@@ -136,7 +136,8 @@ textarea:focus {
     background-color: rgba(100, 219, 255, 0.705);
     border: .33rem solid #EDE90C;
     outline: none;
-}
+} 
+*/
 
 /********* Footer Style ***********/
 
