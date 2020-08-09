@@ -10,6 +10,7 @@ const Contact = () => (
 <h1 id="title">Leave Us a Note</h1>
     <Container>
     <form name="contact" method="post" netlify-honeypot="bot-field" data-netlify="true">
+        <input type="hidden" name="contact" value="contact" />
         
         <p class="hidden">
             <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
