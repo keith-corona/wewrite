@@ -11,7 +11,7 @@ const ListLink = props => (
 
 export default function Layout({ children }) {
   return (
-    <div style={{backgroundColor: `red`}}>
+    <div style={{display: `flex`, flexDirection: `column`, alignItems: `center`, justifyContent: `center`, }}>
       {children}
     </div>
   )
