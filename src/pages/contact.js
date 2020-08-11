@@ -1,36 +1,65 @@
 import React from "react"
-import Header from "../components/header"
-import Footer from "../components/footer"
-import Container from "../components/container"
+import { graphql } from "gatsby"
+import Layout from "../components/layout"
 
-const Contact = () => (
+const ContactForm = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata.title
 
-<div>
-<Header headerText="Stories from the Sources" link1Text= "Contact"/>
-<h1 id="title">Leave Us a Note</h1>
-    <Container>
-    <form name="contact" method="post" netlify-honeypot="bot-field" data-netlify="true">
-        <input type="hidden" name="contact" value="contact" />
-        
-        <p class="hidden">
-            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  return (
+    <Layout location={location} title={siteTitle}>
+      <h1>Contact</h1>
+      <form
+        name="contact"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        action="/thank-you"
+      >
+        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+        <input type="hidden" name="form-name" value="contact" />
+        <p hidden>
+          <label>
+            Don’t fill this out: <input name="bot-field" />
+          </label>
         </p>
-
         <p>
-            <label>Email: <input type="text" name="email" /></label>
+          <label>
+            Your name:
+            <br />
+            <input type="text" name="name" />
+          </label>
         </p>
-
         <p>
-            <label>Message: <textarea name="message"></textarea></label>
+          <label>
+            Your email:
+            <br />
+            <input type="email" name="email" />
+          </label>
         </p>
-
         <p>
-            <button type="submit">Send</button>
+          <label>
+            Message:
+            <br />
+            <textarea name="message" />
+          </label>
         </p>
-    </form>
-    </Container>
-<Footer footerReturn="Home" linkContact="Contact" footerText="This is a UCSB Linguistics 12 project" footerQtr="Spring" footerYr="2020"/>
-</div>
-)
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    </Layout>
+      
+  )
+}
 
-export default Contact
+export default ContactForm
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
